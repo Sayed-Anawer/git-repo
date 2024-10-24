@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
@@ -11,9 +11,63 @@
     <h4>Love story Piano Audio</h4>
     <audio controls src="assets/piano.mp3"></audio>
     <h4>Cinematic video</h4>
-    <video
-      controls
-      src="assets/cinemetic.mp4"
-    ></video>
+    <video controls src="assets/cinemetic.mp4"></video>
+
+    <h2>Please fill up the form</h2>
+    <form>
+      <fieldset>
+        <legend><strong>Registration form</strong></legend>
+        <label for="name"
+          >First Name:
+          <input type="text" name="" id="name" />
+        </label>
+        <label for="lname"
+          >Last name:
+          <input type="text" name="" id="lname" />
+        </label>
+        <label for="email"
+          >Email: <input type="email" name="" id="email"
+        /></label>
+        <label for="password"
+          >Password:
+          <input type="password" name="" id="password" />
+        </label>
+        <h4>Gender</h4>
+        <label for="male"
+          ><input type="radio" name="gender" id="male" /> Male</label
+        >
+        <label for="female"
+          ><input type="radio" name="gender" id="female" /> Female</label
+        >
+        <label for="other"
+          ><input type="radio" name="gender" id="other" /> Other</label
+        >
+
+        <h4>Preferences</h4>
+        <label for="acrylic"
+          ><input type="checkbox" name="pref" id="acrylic" /> Acrylic Painting</label
+        >
+        <label for="oil"
+          ><input type="checkbox" name="pref" id="oil" /> Oil Painting</label
+        >
+        <label for="water"
+          ><input type="checkbox" name="pref" id="water" /> Water Painting</label
+        >
+
+        <label for="occupation">
+          Select Occupation: 
+          <select name="" id="occupation">
+            <option value="Student">Student</option>
+            <option value="Faculty">Faculty</option>
+            <option value="Professor">Professor</option>
+          </select>
+        </label>
+        <label for="textArea">Bio:
+          <textarea name="" id="textArea"></textarea>
+        </label>
+        <input type="reset" value="Reset">
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
   </body>
 </html>
